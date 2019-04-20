@@ -63,7 +63,7 @@ void mesh_app_uuid_print(const uint8_t * p_uuid)
 
     UNUSED_VARIABLE(p_format);
     __LOG_XB(LOG_SRC_APP, LOG_LEVEL_INFO, "Device UUID (raw)", p_uuid, NRF_MESH_UUID_SIZE);
-    __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "Device UUID : %08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X\n",
+    __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "Device UUID : %08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X\r\n",
           p_format->time_low, p_format->time_mid, p_format->time_hi_version,
           p_format->clock_seq_hi_reserved, p_format->clock_seq_low,
           p_format->node[0], p_format->node[1], p_format->node[2], p_format->node[3],

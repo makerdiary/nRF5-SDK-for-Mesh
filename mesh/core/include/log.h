@@ -281,7 +281,7 @@ void log_vprintf(uint32_t dbg_level, const char * p_filename, uint16_t line, uin
             array_text[_i * 2 + 1] = g_log_hex_digits[array_elem & 0xf];    \
         }                                                                   \
         array_text[_array_len * 2] = 0;                                     \
-        log_printf(level, __FILENAME__, __LINE__, log_timestamp_get(), "%s: %s\n", msg, array_text); \
+        log_printf(level, __FILENAME__, __LINE__, log_timestamp_get(), "%s: %s\r\n", msg, array_text); \
     }
 
 #else
